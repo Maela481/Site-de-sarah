@@ -156,7 +156,7 @@ ul {
 }
 
 ul li a {
-    color: #004080;
+    color: rgb(255, 60, 0);
     text-decoration: none;
 }
 
@@ -221,6 +221,7 @@ footer {
 
     .menu-toggle {
         display: block;
+        color: black;
     }
 
     nav.flexbox.active {

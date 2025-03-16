@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    background-color: #282c34;
+    color: #abb2bf;
+    margin: 0;
+    padding: 0;
+    background-image: url('./bg\ dés.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+header {
+    background-color: rgba(33, 150, 243, 0.8);
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+.de {
+    background-color: rgba(63, 81, 181, 0.7);
+    border: 1px solid #ffeb3b;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.de img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.de h2 {
+    color: #ff9800;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: rgba(244, 67, 54, 0.8);
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1em 0;
+}
