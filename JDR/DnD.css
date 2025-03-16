@@ -4,7 +4,7 @@ body {
     color: #eee;
     margin: 0;
     padding: 0;
-    background-image: url('./bg\ DnD.jpg'); /* Remplace par le chemin de ton image */
+    background-image: url('./bg\ DnD.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
