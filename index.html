@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Sarah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blur-background"></div>
+    <div class="content">
+        <header>
+            <h1 id="mon-titre">Site de Sarah</h1>
+            <button class="menu-toggle">☰</button>
+        </header>
+        <nav class="flexbox">
+            <ul>
+                <li class="has-sous-nav">
+                    <img src="./Images/matos.png" alt="">
+                    <span>Mon matos JDR</span>
+                    <span class="sous-menu-toggle">+</span>
+                    <ul class="sous-nav">
+                        <li><a href="">Mes dés</a></li>
+                        <li><a href="">Mes livres</a></li>
+                        <li><a href="">Autres</a></li>
+                    </ul>
+                </li>
+                <li class="has-sous-nav">
+                    <img src="./Images/JDR.png" alt="">
+                    <span>Mes jeux de rôle</span>
+                    <span class="sous-menu-toggle">+</span>
+                    <ul class="sous-nav">
+                        <li><a href="">JDR Chroniques Oubliées</a></li>
+                        <li><a href="">JDR DnD</a></li>
+                    </ul>
+                </li>
+                <li class="has-sous-nav">
+                    <img src="./Images/DnD.png" alt=""> 
+                    <span>Mon perso DnD</span>
+                    <span class="sous-menu-toggle">+</span>
+                    <ul class="sous-nav">
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+    <main>
+        
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Sarah. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('nav.flexbox');
+        const sousMenuToggles = document.querySelectorAll('.sous-menu-toggle');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        sousMenuToggles.forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                const parentLi = toggle.parentElement;
+                parentLi.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
