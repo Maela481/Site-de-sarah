@@ -96,12 +96,12 @@ li img {
 
 a {
     text-decoration: none;
-    color: var(--text-color);
+    color: #ff4500;
     transition: color 0.3s ease;
 }
 
 li a:hover {
-    color: var(--primary-color);
+    color: #ff4500;
 }
 
 .has-sous-nav {
@@ -109,22 +109,22 @@ li a:hover {
 }
 
 .has-sous-nav:hover .sous-nav {
-    display: none; /* Cache les sous-menus par défaut */
+    display: none; 
 }
 
 @media (min-width: 769px) {
     .has-sous-nav:hover .sous-nav {
-        display: block; /* Affiche les sous-menus au survol sur ordinateur */
+        display: block; 
     }
 }
 
 .sous-nav {
     list-style: none;
-    display: none; /* Cache les sous-menus par défaut */
+    display: none; 
     position: absolute;
     top: 100%;
     left: 35px;
-    background-color: var(--secondary-color);
+    background-color: rgba(245, 245, 245, 0.9);
     width: max-content;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
