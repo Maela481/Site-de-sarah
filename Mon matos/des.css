@@ -4,26 +4,13 @@ body {
     color: #abb2bf;
     margin: 0;
     padding: 0;
-    background-image: url('./bg\ dés.jpg');
+    background-image: url('./dés\ bg.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Style pour les écrans d'ordinateur (taille supérieure à 600px) */
-@media screen and (min-width: 601px) {
-    body {
-        background-size: cover;
-    }
-}
-
-/* Style pour les écrans de téléphone (taille inférieure ou égale à 600px) */
-@media screen and (max-width: 600px) {
-    body {
-        background-size: contain;
-    }
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
 }
 
 header {
@@ -40,7 +27,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-grow: 1;
+    flex-grow: 1; 
 }
 
 .de {
