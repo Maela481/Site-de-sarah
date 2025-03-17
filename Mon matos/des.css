@@ -4,12 +4,12 @@ body {
     color: #abb2bf;
     margin: 0;
     padding: 0;
-    background-image: url('./dés\ bg.jpg');
+    background-image: url('./dés bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -27,7 +27,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 .de {
@@ -41,8 +41,10 @@ main {
 }
 
 .de img {
-    max-width: 150px;
-    height: auto;
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 10px; 
     margin-bottom: 10px;
 }
 
